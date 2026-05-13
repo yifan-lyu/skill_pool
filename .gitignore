@@ -1,0 +1,44 @@
+# Data — never committed
+data/raw/*
+data/clean/*
+!data/raw/.gitkeep
+!data/clean/.gitkeep
+
+# Generated outputs
+output/tables/*
+output/figures/*
+output/logs/*
+!output/tables/.gitkeep
+!output/figures/.gitkeep
+!output/logs/.gitkeep
+
+# LaTeX build artefacts
+*.aux
+*.log
+*.bbl
+*.blg
+*.out
+*.toc
+*.nav
+*.snm
+*.synctex.gz
+*.fdb_latexmk
+*.fls
+
+# Stata
+*.smcl
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
