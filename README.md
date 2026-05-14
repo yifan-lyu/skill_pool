@@ -18,14 +18,36 @@ A minimal, Python/Stata + LaTeX project skeleton with a curated set of skills fo
 └── skills/           curated skill files (start, done, paper-review, …) + full Stata reference
 ```
 
-## Use as a template
+## Use as a template (Codex as an example)
 
-```bash
-cp -r path/to/this/template ~/projects/my-new-paper
-cd ~/projects/my-new-paper
-git init
-# Edit CLAUDE.md — fill in project name, status, data, identification
-```
+I'm starting [PROJECT NAME] in this repo: [2–3 sentence description]. 
+
+Before start, use the folder under [path name]/skill_pool as a readable reference for your workflow instructions, skills, templates, and conventions.
+
+Read AGENTS.md first, then CLAUDE.md — that's the project configuration. Fill in the bracketed placeholders in CLAUDE.md (project name, status, co-authors, target journal, what this project is, project-specific notes) using the values I'll give you. Don't touch AGENTS.md — it's a pointer file with no placeholders.
+Once placeholders are filled, save a DRAFT plan as plans/setup-[YYYY-MM-DD].md describing any further customisations you'd recommend (folder additions, .gitignore extensions, journal-specific style, anything else). Create the plans/ folder if needed. Wait for my approval before executing anything beyond filling placeholders and creating empty folders.
+Workflow norms:
+1. Plan-first for non-trivial tasks: save the plan to plans/ before doing the work.
+2. Invoke skills by name when relevant (/start, /done, /commit, /paper-review, etc. — full list in skills/README.md).
+3. When I correct you on something durable, append a [LEARN:category] entry to MEMORY.md (not AGENTS.md).
+4. End every session by running /done so HANDOFF.md is current — this is how Codex and Claude Code stay in sync.
+5. British spelling throughout (labour, analyse, organisation).
+
+
+[Optional]
+Set up Git version control for this project.
+1. First check whether this folder is already a Git repository.
+2. If not, run `git init`.
+3. Create a `.gitignore` suitable for this project.
+4. Run `git status`, then propose the initial files to track.
+5. Commit automatically whenever you reach big checkpoints/have big changes. Use appropriate name of the commit.
+7. For future large changes, always:
+   - make the edits first
+   - show me `git diff --stat`
+   - summarize the changed files
+   - Commit automatically
+
+
 
 ## Use with Claude Code
 
