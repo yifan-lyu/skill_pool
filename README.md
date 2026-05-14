@@ -8,8 +8,8 @@ A minimal, Python/Stata + LaTeX project skeleton with a curated set of skills fo
 .
 ├── CLAUDE.md         conventions, identification hierarchy, tooling — read by both agents
 ├── AGENTS.md         Codex pointer to CLAUDE.md + skill index
-├── MEMORY.md         durable [LEARN] entries across sessions
-├── HANDOFF.md        last-session state
+├── MEMORY.md         long-term memory (the "lessons learned" file)
+├── HANDOFF.md        short-term memory (the "where was I?" file)
 ├── data/             raw/ + clean/ (gitignored)
 ├── code/             python/ + stata/ scripts, numbered
 ├── writing/          LaTeX paper, .bib, paper figures
